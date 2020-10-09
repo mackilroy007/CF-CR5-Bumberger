@@ -1,6 +1,6 @@
 // linking json and script together
 var movieInfoArr = JSON.parse(content);
-console.table(movieInfoArr);
+//console.table(movieInfoArr);
 
 // generating the movie cards and button content
 for (let i = 0; i < movieInfoArr.length; i++) {
@@ -18,8 +18,10 @@ for (let i = 0; i < movieInfoArr.length; i++) {
                         <p class="card-text text-light">${movieInfoArr[i].description}</p>
                         <p class="card-text"><small class="text-muted">${movieInfoArr[i].release}</small></p>
                             <div class="row m-1">
-                                <button type="button" class="btn btn-dark ml-auto text-success">Likes <span class="fas fa-thumbs-up text-success"></span></button>
-                                <p class="card-text text-light circle mt-2">${movieInfoArr[i].likes}</p>
+                                <button type="button" class="btn btn-dark ml-auto text-success">Likes 
+                                    <span class="fas fa-thumbs-up text-success"></span>
+                                </button>
+                                <p class="card-text text-light circle mt-2" like-counter="${i}">${movieInfoArr[i].likes}</p>
                             </div>
                     </div>
                 </div>
@@ -27,3 +29,14 @@ for (let i = 0; i < movieInfoArr.length; i++) {
         </div>
     `;
 };
+
+//button click funciton
+$(document).ready(function(){
+    $("button").on("click", function(){
+        var index = $(this).siblings(".card-text").attr("like-counter");
+        index = Number(index);
+        movieInfoArr[index].likes += 0.1;
+        var num = movieInfoArr[index].likes;
+        $(this).siblings(".card-text").html(num.toFixed(1));
+    })
+})
