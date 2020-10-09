@@ -1,0 +1,40 @@
+var content = `[{
+    "movieName": "No Time to Die",
+    "image": "img/No-Time-to-Die.jpg",
+    "description": "James Bond has left active service. His peace is short-lived when Felix Leiter, an old friend from the CIA, turns up asking for help, leading Bond onto the trail of a mysterious villain armed with dangerous new technology.",
+    "likes": "N/A",
+    "release": "2 April 2021",
+    "imdb": "https://www.imdb.com/title/tt2382320/?ref_=fn_al_tt_1"
+},
+{
+    "movieName": "Greenland",
+    "image": "img/Greenland.jpg",
+    "description": "A family struggles for survival in the face of a cataclysmic natural disaster.",
+    "likes": 6.5,
+    "release": "28 October 2020",
+    "imdb": "https://www.imdb.com/title/tt7737786/?ref_=nv_sr_srsg_0"
+},
+{
+    "movieName": "Holidate",
+    "image": "img/Holidate.jpg",
+    "description": "Sloane and Jackson hate being single on holidays where they face constant judgment from their meddling families. So, when these two strangers meet, they pledge to be each other's "holidate" for every festive occasion in the year ahead.",
+    "likes": "N/A",
+    "release": "13 October 2020",
+    "imdb": "https://www.imdb.com/title/tt9866072/?ref_=nv_sr_srsg_0"
+},
+{
+    "movieName": "Tenet",
+    "image": "img/Tenet.jpg",
+    "description": "Armed with only one word, Tenet, and fighting for the survival of the entire world, a Protagonist journeys through a twilight world of international espionage on a mission that will unfold in something beyond real time.",
+    "likes": 7.8,
+    "release": "26 August 2020",
+    "imdb": "https://www.imdb.com/title/tt6723592/?ref_=nv_sr_srsg_0"
+},
+{
+    "movieName": "Wonder Woman 1984",
+    "image": "img/Wonder-Woman-1984.jpg",
+    "description": "Short description",
+    "likes": "N/A",
+    "release": "26 December 2020",
+    "imdb": "https://www.imdb.com/title/tt7126948/?ref_=nv_sr_srsg_0"
+}]`
