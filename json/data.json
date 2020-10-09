@@ -17,7 +17,7 @@ var content = `[{
 {
     "movieName": "Holidate",
     "image": "img/Holidate.jpg",
-    "description": "Sloane and Jackson hate being single on holidays where they face constant judgment from their meddling families. So, when these two strangers meet, they pledge to be each other's "holidate" for every festive occasion in the year ahead.",
+    "description": "Sloane and Jackson hate being single on holidays where they face constant judgment from their meddling families. So, when these two strangers meet, they pledge to be each other's 'holidate' for every festive occasion in the year ahead.",
     "likes": "N/A",
     "release": "13 October 2020",
     "imdb": "https://www.imdb.com/title/tt9866072/?ref_=nv_sr_srsg_0"
@@ -31,9 +31,17 @@ var content = `[{
     "imdb": "https://www.imdb.com/title/tt6723592/?ref_=nv_sr_srsg_0"
 },
 {
+    "movieName": "Joker",
+    "image": "img/Joker.jpg",
+    "description": "In Gotham City, mentally troubled comedian Arthur Fleck is disregarded and mistreated by society. He then embarks on a downward spiral of revolution and bloody crime. This path brings him face-to-face with his alter-ego: the Joker.",
+    "likes": 8.5,
+    "release": "4 October 2019",
+    "imdb": "https://www.imdb.com/title/tt6723592/?ref_=nv_sr_srsg_0"
+},
+{
     "movieName": "Wonder Woman 1984",
     "image": "img/Wonder-Woman-1984.jpg",
-    "description": "Short description",
+    "description": "Fast forward to the 1980s as Wonder Woman's next big screen adventure finds her facing two all-new foes: Max Lord and The Cheetah.",
     "likes": "N/A",
     "release": "26 December 2020",
     "imdb": "https://www.imdb.com/title/tt7126948/?ref_=nv_sr_srsg_0"
