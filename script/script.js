@@ -37,7 +37,7 @@ for (let i = 0; i < movieInfoArr.length; i++) {
 $(document).ready(function(){
     $("button").on("click", function(){
         var index = $(this).parent().find(".card-text").attr("like-counter");
-        //movies that havent been released are marked with N/A and can't be modified
+        //movies that havent been released are marked with N/A and can't be modified untill changed within the JSON file
         index = Number(index);
         movieInfoArr[index].likes += 0.1;
         var num = movieInfoArr[index].likes;
