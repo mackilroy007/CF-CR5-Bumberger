@@ -13,15 +13,18 @@ for (let i = 0; i < movieInfoArr.length; i++) {
                     </a>  
                 </div>
                 <div class="col-md-8">
-                    <div class="card-body">
+                    <div class="card-body d-flex flex-column">
                         <h5 class="card-title text-light">${movieInfoArr[i].movieName}</h5>
                         <p class="card-text text-light">${movieInfoArr[i].description}</p>
                         <p class="card-text"><small class="text-muted">${movieInfoArr[i].release}</small></p>
-                            <div class="row m-1">
+                            <div class="button-box text-right mt-auto">
                                 <button type="button" class="btn btn-dark ml-auto text-success">Likes 
                                     <span class="fas fa-thumbs-up text-success"></span>
                                 </button>
-                                <p class="card-text text-light circle mt-2" like-counter="${i}">${movieInfoArr[i].likes}</p>
+                                <button type="button" class="btn btn-success ml-auto text-success">
+                                <p class="card-text text-light circle" like-counter="${i}">${movieInfoArr[i].likes}</p>
+                                </button>
+                                
                             </div>
                     </div>
                 </div>
@@ -33,10 +36,10 @@ for (let i = 0; i < movieInfoArr.length; i++) {
 //button click funciton
 $(document).ready(function(){
     $("button").on("click", function(){
-        var index = $(this).siblings(".card-text").attr("like-counter");
+        var index = $(this).parent().find(".card-text").attr("like-counter");
         index = Number(index);
         movieInfoArr[index].likes += 0.1;
         var num = movieInfoArr[index].likes;
-        $(this).siblings(".card-text").html(num.toFixed(1));
+        $(this).parent().find(".card-text").html(num.toFixed(1));
     })
 })
