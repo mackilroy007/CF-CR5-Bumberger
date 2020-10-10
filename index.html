@@ -31,21 +31,31 @@
             background-color: black;
         }
 
-        .card-body {
-            height: 100%;
+        
+        /* Medium devices (tablets, 768px and up) */
+        @media (min-width: 768px) {
+            .card-body {
+                min-height: 266px;
+            }
+        }
+         /*Extra large devices (large desktops, 1200px and up) */
+         @media (min-width: 1200px) {
+            .card-body {
+                min-height: 338px;
+            }
         }
     </style>
 </head>
 
 <body>
-
+    <!-- header -->
     <header class="containter-fluid">
         <div>
             <h1 class="text-light text-center p-3 m-0">Movie Factory</h1>
         </div>
     </header>
-
-    <nav class="navbar navbar-expand-md navbar-light bg-dark">
+    <!-- navbar hides on xs and sm displays and only displays from md screens onwards -->
+    <nav class="navbar d-none d-md-block navbar-expand-md navbar-light bg-dark">
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item active">
@@ -54,23 +64,25 @@
             </ul>
         </div>
     </nav>
+    <!-- main background color -->
     <div class="background-main">
+        <!-- main content -->
         <div class="container">
             <main>
                 <h3 class="text-light text-center p-3 m-0">Movies</h3>
                 <br>
                 <div class="content row d-flex justify-content-center">
-                    <!-- json content displayed -->
+                    <!-- json content displayed within content cards-->
                 </div>
             </main>
         </div>
     </div>
+    <!-- footer -->
     <footer>
         <h1 class="text-light text-center p-3 m-0">Movie Factory</h1>
     </footer>
-
-    <!-- Optional JavaScript -->
-
+    <!-- script movie site function -->
+    <script src="script/script.js"></script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -81,8 +93,8 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
-    <!-- script movie site function -->
-    <script src="/script/script.js"></script>
+
+
 </body>
 
 </html>
