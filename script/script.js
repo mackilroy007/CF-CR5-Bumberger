@@ -21,9 +21,9 @@ for (let i = 0; i < movieInfoArr.length; i++) {
                                 <button type="button" class="btn btn-dark ml-auto text-success">Likes 
                                     <span class="fas fa-thumbs-up text-success"></span>
                                 </button>
-                                <button type="button" class="btn btn-success ml-auto text-success">
+                                <div class="btn btn-success ml-auto text-success">
                                 <p class="card-text text-light circle" like-counter="${i}">${movieInfoArr[i].likes}</p>
-                                </button>
+                                </div>
                                 
                             </div>
                     </div>
